@@ -191,7 +191,7 @@ def Mid_Riser(x):
     and returns the output of the quantizer"""
     return D*(math.floor(x/D)+1/2)
 
-i=Mid_Riser(-2) 							#lowest quantization level
+i=Mid_Riser(-2) 					 #lowest quantization level
 quantize_levels=[]
 for j in range(2**Q):                       #create the quantization levels
     quantize_levels.append(round(i,6))
